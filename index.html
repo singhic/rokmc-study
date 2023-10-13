@@ -19,7 +19,7 @@
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
           <svg class="png" width="40" height="32" role="png" aria-label="logo">
 			  <use xlink:href="#logo">
-			  	<img src="https://singhic.github.io/rokmc-study/logo.png" alt="Singhik">
+			  	<img src="logo.png" alt="Singhik">
 			  </use>
 		  </svg>
         </a>
@@ -38,27 +38,32 @@
         <button type="button" class="btn btn-primary">Sign-up</button>
       </div>
     </header>
-	<main>
-		<div class="sec_cal">
-		  <div class="cal_nav">
-			<a href="javascript:;" class="nav-btn go-prev">prev</a>
-			<div class="year-month"></div>
-			<a href="javascript:;" class="nav-btn go-next">next</a>
-		  </div>
-		  <div class="cal_wrap">
-			<div class="days">
-			  <div class="day">MON</div>
-			  <div class="day">TUE</div>
-			  <div class="day">WED</div>
-			  <div class="day">THU</div>
-			  <div class="day">FRI</div>
-			  <div class="day">SAT</div>
-			  <div class="day">SUN</div>
-			</div>
-			<div class="dates"></div>
-		  </div>
-		</div>
-	</main>
+		<div>
+        <table class="Calendar">
+            <thead>
+                <tr>
+                    <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                    <td colspan="5">
+                        <span id="calYear"></span>년
+                        <span id="calMonth"></span>월
+                    </td>
+                    <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+                </tr>
+                <tr>
+                    <td>일</td>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                    <td>목</td>
+                    <td>금</td>
+                    <td>토</td>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 	<script src="index.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
